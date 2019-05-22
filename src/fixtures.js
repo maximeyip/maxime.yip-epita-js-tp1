@@ -2,4 +2,5 @@
 
 const pictures = [];
 
-export default pictures;
+export default pictures; 
+ 

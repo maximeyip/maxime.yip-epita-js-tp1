@@ -1,3 +1,5 @@
+import { setState, getState } from "../store";
+
 /* FIXME:
 *
 * export a function that adds a new element to the store.
@@ -9,6 +11,11 @@
 *
 */
 
-const add = () => {};
+const add = (params) => {
+    if (typeof(params) == 'string')
+        getState().push(params);
+    else if (Array.isArray(params))
+        setState([...getState(), ...params]);
+};
 
 export default add;

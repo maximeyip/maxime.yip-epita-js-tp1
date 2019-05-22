@@ -1,3 +1,5 @@
+import { setState } from "../store";
+
 /* FIXME:
 *
 * export a function that updates a single element from the store.
@@ -8,6 +10,8 @@
 *
 */
 
-const update = () => {};
+const update = (obj) => {
+    setState(obj);
+};
 
 export default update;
